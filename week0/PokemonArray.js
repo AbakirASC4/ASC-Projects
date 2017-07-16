@@ -6,7 +6,7 @@ myPokemonRoster.push("Pikachu");
 myPokemonRoster.push("Raichu");
 myPokemonRoster.length;
 var RosterSize = myPokemonRoster.length;
-if(myPokemonRoster.length >=4){
+if(myPokemonRoster.length >=5){
 for (var i = 0; i<5; i++){
     console.log(myPokemonRoster[i]);
 }
