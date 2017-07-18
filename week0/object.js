@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var charizard = {
     "attack": "Blaze",
     "HP" : 266,
@@ -30,7 +29,6 @@ function Pizza(sauce,cheese,toppings, size){
     this.toppings = toppings;
     this.size = size;
 }
-=======
 var charizard = {
     "attack": "Blaze",
     "HP" : 266,
@@ -62,5 +60,4 @@ function Pizza(sauce,cheese,toppings, size){
     this.toppings = toppings;
     this.size = size;
 }
->>>>>>> origin/master
 var pizza = new Pizza('tomato sauce', 'mozzerella', ['pineapples', 'ham', 'bacon'], 'XXl');

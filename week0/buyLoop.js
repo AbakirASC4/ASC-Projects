@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // No argument 
 var prompt = require('prompt-sync')();
 // 
@@ -34,7 +33,6 @@ if(seeInventory == "y"){
     console.log("Your inventory is:" + userItems);
 }else{
     console.log("Have a good day");
-=======
 // No argument 
 var prompt = require('prompt-sync')();
 // 
@@ -70,5 +68,4 @@ if(seeInventory == "y"){
     console.log("Your inventory is:" + userItems);
 }else{
     console.log("Have a good day");
->>>>>>> origin/master
 }

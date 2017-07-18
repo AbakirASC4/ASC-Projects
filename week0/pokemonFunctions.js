@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var letterReturned;
 var randnumber = Math.floor(Math.random()*letters.length);
@@ -62,7 +61,6 @@ if (poke2 [2] == 0){
     console.log(poke2[0] + " has won.");
 }
 
-=======
 var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var letterReturned;
 var randnumber = Math.floor(Math.random()*letters.length);
@@ -126,4 +124,3 @@ if (poke2 [2] == 0){
     console.log(poke2[0] + " has won.");
 }
 
->>>>>>> origin/master

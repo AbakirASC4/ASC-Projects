@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var prompt = require('prompt-sync')();
 
 var firstPokemon = ["Charizard", "Dragon/Fire", 350 ,50 ,350, false];
@@ -46,7 +45,6 @@ addPoke();
 search();
 
 
-=======
 var prompt = require('prompt-sync')();
 
 var firstPokemon = ["Charizard", "Dragon/Fire", 350 ,50 ,350, false];
@@ -94,4 +92,3 @@ addPoke();
 search();
 
 
->>>>>>> origin/master

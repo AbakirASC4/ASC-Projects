@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var grade = 75;
 if (grade >= 90 && grade<=100){
     console.log("You have got an A");
@@ -8,7 +7,6 @@ if (grade >= 90 && grade<=100){
     console.log("You have got a C")
 }else if (grade >= 0 && grade <= 70) {
     console.log("You have got a F")
-=======
 var grade = 75;
 if (grade >= 90 && grade<=100){
     console.log("You have got an A");
@@ -18,5 +16,4 @@ if (grade >= 90 && grade<=100){
     console.log("You have got a C")
 }else if (grade >= 0 && grade <= 70) {
     console.log("You have got a F")
->>>>>>> origin/master
 }

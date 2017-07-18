@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var myPokemonRoster = ["Charizard", "Blastoise", "venasaur", "Alakasm", "Lapris"];
 var firstToFight = myPokemonRoster[0];
 var secondToFight = myPokemonRoster[1];
@@ -19,7 +18,6 @@ for (var i = 0; i<myPokemonRoster.length; i++){
 }
 }else{
     console.log("You Can’t Play! Not Enough Pokemon");
-=======
 var myPokemonRoster = ["Charizard", "Blastoise", "venasaur", "Alakasm", "Lapris"];
 var firstToFight = myPokemonRoster[0];
 var secondToFight = myPokemonRoster[1];
@@ -40,5 +38,4 @@ for (var i = 0; i<myPokemonRoster.length; i++){
 }
 }else{
     console.log("You Can’t Play! Not Enough Pokemon");
->>>>>>> origin/master
 }

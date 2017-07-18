@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var choices = ["Rock", "Paper", "Scissors"];
 var computer1Choice;
 var computer2Choice;
@@ -26,7 +25,6 @@ if (computer1Wins == 3){
     console.log("Computer1 Winssssss");
 }else if (computer2Wins == 3){
     console.log("Computer2 Winssssss");
-=======
 var choices = ["Rock", "Paper", "Scissors"];
 var computer1Choice;
 var computer2Choice;
@@ -54,5 +52,4 @@ if (computer1Wins == 3){
     console.log("Computer1 Winssssss");
 }else if (computer2Wins == 3){
     console.log("Computer2 Winssssss");
->>>>>>> origin/master
 }

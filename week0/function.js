@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function hello() {
     console.log("Hello World");
 }
@@ -14,7 +13,6 @@ function rand(number){
     
     return wholeNumber;
 }
-=======
 function hello() {
     console.log("Hello World");
 }
@@ -30,5 +28,4 @@ function rand(number){
     
     return wholeNumber;
 }
->>>>>>> origin/master
 console.log (rand(2000));

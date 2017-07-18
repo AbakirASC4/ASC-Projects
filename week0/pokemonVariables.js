@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //First Pokemon
 var charizardHP = 99999999999999;
 var charizardNum = 3;
@@ -40,7 +39,6 @@ var venusuarLastEvo = true;
 
 var venusuarAttack = 99999999999; 
 var venusuarDefense = 999999999;
-=======
 //First Pokemon
 var charizardHP = 99999999999999;
 var charizardNum = 3;
@@ -82,5 +80,4 @@ var venusuarLastEvo = true;
 
 var venusuarAttack = 99999999999; 
 var venusuarDefense = 999999999;
->>>>>>> origin/master
 var venusuarSpeed = 9999999999999;
