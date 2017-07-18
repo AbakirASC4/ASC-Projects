@@ -95,12 +95,16 @@ pokeRoster.push(seventhpokemon);
 function remove(){
     if (pokeRoster.length > 6){
         console.log("You can not have more pokemon that 6 pokemon in your roster." + "\n" + "We shall now remove one at random. ")
-        var c = Math.floor(Math.random()*pokeRoster.length) ;
+        var c = Math.floor(Math.random()*pokeRoster.length);
         console.log("This is the pokemon about to be removed " + pokeRoster[c].Name + ". ") 
         pokeRoster.pop[c];
     }
 }
-
+function pokemonBattle(){
+    var a = Math.floor(Math.random()*pokeRoster.length);
+    var b = Math.floor(Math.random()*pokeRoster.length);
+    
+}
 printRoster();
 pokemonAttacked();
 userattacks();

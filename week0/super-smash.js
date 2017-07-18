@@ -4,8 +4,8 @@ var prompt = require('prompt-sync')();
 var mashArray =["Ocean", "Sky", "Valcano", "Outerspace"];
 var rand = mashArray[Math.floor(Math.random() * mashArray.length)];
 
-var firstQuestion = [1,2,3];
-var rand2 = Math.floor(Math.random() * firstQuestion.length);
+var firstQuestion = [5,2,3];
+var rand2 = Math.floor(Math.random() * firstQuestion.length;
 
 var secondQuestion = ["Fox", "Bowser"];
 var rand3 = mashArray[Math.floor(Math.random() * secondQuestion.length)];
