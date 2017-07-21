@@ -34,11 +34,11 @@ function drawracket(){
 function ballMovement(){ //This is how the ball moves
     ballX = ballX + ballxSpeed;
     ballY = ballY + ballySpeed;
-        if (ballY-25<=0 || ballY+25>=800){
+        if (ballY-26<=0 || ballY+26>=800){
             ballySpeed = -ballySpeed;
             ballySpeed--;
             }
-            if (ballX+25>=800 || ballX-25<=0){
+            if (ballX+26>=800 || ballX-26<=0){
                 ballxSpeed = -ballxSpeed;
                  ballxSpeed--;
  }
@@ -57,8 +57,8 @@ function keyPressed(){
 }
 
 function rackettouch(){
-    if ((racketX-racketWidth/2<ballX+25 && (racketX+racketWidth/2)>ballX-25 && (racketY-10)<ballY+25 
-    && (racketY+10)>ballY-25)){
+    if ((racketX-racketWidth/2 < ballX+25 && (racketX+racketWidth/2) > ballX-25 && (racketY-racketHeight/2) < ballY+25 
+    && (racketY+racketHeight/2) > ballY-25)){
         ballySpeed++;
         ballySpeed = -ballySpeed;
         }
