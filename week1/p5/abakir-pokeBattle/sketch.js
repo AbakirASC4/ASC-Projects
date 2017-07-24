@@ -162,7 +162,7 @@ function setup(){
 function draw(){
    initscreen();
    pokebattle();
-   check();
+//    check();
 }
 function initscreen(){
     if (gamescreen == 0){
@@ -319,45 +319,45 @@ function pokebattle(){
         }
     }
 }
-function check(){
-    if (firstPokemon.HP <= 0){
-        firstPokemon.HP = 0;
-        a=100;
-        gamescreen = 0;
-        if (secondPokemon.HP >= 0 || thirdPokemon.HP >= 0){
-            gamescreen = 1;
-        }
+// function check(){
+//     if (firstPokemon.HP <= 0){
+//         firstPokemon.HP = 0;
+//         a=100;
+//         gamescreen = 0;
+//         if (secondPokemon.HP >= 0 || thirdPokemon.HP >= 0){
+//             gamescreen = 1;
+//         }
 
-    }
-    if (secondPokemon.HP <= 0){
-        secondPokemon.HP = 0;
-        a=100;
-        gamescreen = 0;
-    }
-    if(thirdPokemon.HP <= 0){
-        thirdPokemon.HP = 0;
-        a=100;
-        gamescreen = 0;
-    }
-    if(fourthPokemon.HP<=0){
-        fourthPokemon.HP = 0;
-        b=100;
-        pokeRoster2.pop(fourthPokemon);
-        switch2 = fifthPokemon;
-    }
-    if(fifthPokemon.HP<=0){
-        fifthPokemon.HP = 0;
-        b=100;
-        pokeRoster2.pop(fifthPokemon);
-        switch2 = sixthPokemon;
-    }
-    if(sixthPokemon.HP<=0){
-        sixthPokemon.HP = 0;
-        b=100;
-        pokeRoster2.pop(sixthPokemon);
-        switch2 = fourthPokemon;
-    }
-}
+//     }
+//     if (secondPokemon.HP <= 0){
+//         secondPokemon.HP = 0;
+//         a=100;
+//         gamescreen = 0;
+//     }
+//     if(thirdPokemon.HP <= 0){
+//         thirdPokemon.HP = 0;
+//         a=100;
+//         gamescreen = 0;
+//     }
+//     if(fourthPokemon.HP<=0){
+//         fourthPokemon.HP = 0;
+//         b=100;
+//         pokeRoster2.pop(fourthPokemon);
+//         switch2 = fifthPokemon;
+//     }
+//     if(fifthPokemon.HP<=0){
+//         fifthPokemon.HP = 0;
+//         b=100;
+//         pokeRoster2.pop(fifthPokemon);
+//         switch2 = sixthPokemon;
+//     }
+//     if(sixthPokemon.HP<=0){
+//         sixthPokemon.HP = 0;
+//         b=100;
+//         pokeRoster2.pop(sixthPokemon);
+//         switch2 = fourthPokemon;
+//     }
+// }
 function mouseClicked(){
     if (gamescreen == 0) {
         if(mouseX>=2 && mouseX<=499 && mouseY >= 2 && mouseY <= 150 ){
