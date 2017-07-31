@@ -11,6 +11,7 @@ this.height = height;
 }
 
 var alien = [];
+
 function Shot(xpos,ypos,width,height){
 this.xpos = xpos;
 this.ypos = ypos;
@@ -22,10 +23,13 @@ var gameScreen = 0;
 var shots = [];
 var a = 0;
 var x =0;
-var y = 25;
+var y = 10;
 var speed = 5;
 var level = 1;
 var score = 0;
+
+var xspeed = 3;
+var yspeed = 15;
 
 function setup(){
     createCanvas(600, 600);
@@ -69,6 +73,7 @@ function initScreen(){
             x = -x;
         }
  }
+
 function move(){
     if (keyIsDown(LEFT_ARROW)){
         x -= 5;
@@ -78,25 +83,6 @@ function move(){
         }
 }
 
-function addshot(){
-    for(var a = 0; a < shots.length; a++){
-        fill("white");
-        rect(shots[a].xpos, shots[a].ypos, shots[a].width, shots[a].height);
-        shots[a].ypos = shots[a].ypos - y;
-        if (shots[a].ypos <= 0){
-            shots.splice(a,1);
-        }
-    }
-}
-
-function keyPressed(){
-    if (keyCode == 32){
-             shots.push(new Shot((((width/2) - 15) + x), 530, 30, 20));
-        }
-    }
-
-var xspeed = 2;
-var yspeed = 15;
 
 function drawAlien(){
     for (var s =0; s < alien.length; s++){
@@ -110,7 +96,7 @@ function drawAlien(){
                 alien[d].ypos = alien[d].ypos + yspeed;
             }
         }
-       if(alien[s].ypos >= 510){
+       if(alien[s].ypos >= 490){
            background("black");
            fill("white");
            textSize(50);
@@ -120,19 +106,40 @@ function drawAlien(){
         
     }
 }
+
+function keyPressed(){
+    if (keyCode == 32){
+             shots.push(new Shot((((width/2) - 15) + x), 530, 30, 20));
+        }
+    }
+
+function addshot(){
+    for(var a = 0; a < shots.length; a++){
+        fill("white");
+        rect(shots[a].xpos, shots[a].ypos, shots[a].width, shots[a].height);
+        shots[a].ypos = shots[a].ypos - y;
+        if (shots[a].ypos <= 0){
+            shots.splice(a,1);
+        }
+    }
+}
+
+
+
+
 function disappear(){
-    for (var i = 0; i < alien.length; i++){
-        for(var j = 0; j < shots.length; j++){
-            if (shots[j].xpos >= (alien[i].xpos - alien[i].width) && shots[j].xpos <= (alien[i].xpos + alien[i].width)
-            && shots[j].ypos >= (alien[i].ypos - alien[i].height) && shots[j].ypos <= (alien[i].ypos + alien[i].height)) {
+    for (var j = 0; j < shots.length; j++){
+        for(var i = 0; i < alien.length; i++){
+            if ((shots[j].xpos >= (alien[i].xpos - alien[i].width) && shots[j].xpos <= (alien[i].xpos + alien[i].width))
+            && (shots[j].ypos >= (alien[i].ypos - alien[i].height) && shots[j].ypos <= (alien[i].ypos + alien[i].height))) 
+            {
                 shots.splice(j, 1);
-                alien.splice(i, 1);
-                
+                alien.splice(i, 1);  
                 score = score + 10;
             }
         }
     }
-    if (score == 1000){
+    if (score >= 1000){
         background("black");
         fill("white");
         textSize(50);
@@ -155,11 +162,11 @@ function levels(){
                 for (var z =0; z<6; z++){
                     alien.push(new Aliens(30 + (z*90),125,50,50));
                     if (score >= 180 && alien.length >= 12){
-                        yspeed ++;
+                        y ++;
                         for (var x=0; x<6; x++){
                             alien.push(new Aliens(30 + (x*90),200,50,50));
                             if (score >= 360 && alien.length >= 18){
-                                yspeed ++;
+                                y ++;
                                 for (var c =0; c<6; c++){
                                     alien.push(new Aliens(30 +(c*90),275,50,50));
                                 }
