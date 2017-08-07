@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>CloutDex</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--Reference Client ID in meta tag here-->
+    <meta name="google-signin-client_id" content="387709839585-jmr2oj6a8hhfejvjdjv6jbelb7hcvpin.apps.googleusercontent.com">
+    <!--387709839585-jmr2oj6a8hhfejvjdjv6jbelb7hcvpin.apps.googleusercontent.com-->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="signs">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+                </div>
+            </div>
+        </div>
+        <h3>Welcome: <span class="userName"></span></h3>
+
+        <!--Populate section with user data-->
+        <section>
+            <div class="userData">
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div align="center" class="col-lg-12">
+                <img class="logo" src="http://25.media.tumblr.com/8e4aafd22dfc23592ea2bf16f4f7be87/tumblr_mze2tugzvO1qh44dro1_500.gif">
+            </div>
+        </div>
+        <div class="row">
+            <div align="center" class="col-lg-12">
+                <h1>Pokedex Search by ID or Name:</h1>
+                <input id="whichpoke" placeholder="Pokemon" />
+                <button onclick="changePoke()">Search!</button>
+            </div>
+        </div>
+        <div align="center" class="col-lg-12">
+            <div id="clear">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
