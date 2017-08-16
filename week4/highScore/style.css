@@ -1,0 +1,31 @@
+body{
+}
+.container-fluid{
+    text-align:  center;
+}
+button{
+    background: linear-gradient(rgb(68, 199, 103) 5%, rgb(92, 191, 42) 100%) rgb(68, 199, 103);
+    border-radius: 42px;
+    border: 2px solid rgb(24, 171, 41);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 22px;
+    padding: 11px 19px;
+    text-decoration: none;
+    text-shadow: rgb(47, 102, 39) 0px 2px 0px;
+}
+.button1{ 
+    background: linear-gradient(rgb(0, 115, 255) 5%, rgb(0, 21, 255) 100%) rgb(0, 115, 255);
+    border-radius: 42px;
+    border: 2px solid rgb(255, 0, 0);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 22px;
+    padding: 11px 19px;
+    text-decoration: none;
+    text-shadow: rgb(60, 133, 49) 0px 2px 0px;
+}

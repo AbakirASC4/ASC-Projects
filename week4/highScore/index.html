@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper and Scissors Game!!</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12" id="winner">
+                <h1>This is a Rock, Paper and Scissors Game!</h1>
+                <p>To start the game press the button</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Your choice:</p>
+                <button type="button" onclick="userChoice('Rock');">Rock</button>
+                <button type="button" onclick="userChoice('Paper');">Paper</button>
+                <button type="button" onclick="userChoice('Scissors');">Scissors</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="textContainer">
+                    <div>
+                        <p>Your name:</p><input id="name1" type="text">
+                        <input class="button1" type="reset" onclick="updateName();" value="Submit/Update"></input>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="leaderboard">
+            <p>Computer's Score: <span id="score">0</span></p>
+            <span class="user">User's Score:</span> <span id="score1">0</span>
+        </div>
+         <div id="Leader">
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyC61tELU8fcAQfFVsV0O50LgKnwLa6_nq8",
+                authDomain: "rock-paper-scissors-game-8106b.firebaseapp.com",
+                databaseURL: "https://rock-paper-scissors-game-8106b.firebaseio.com",
+                projectId: "rock-paper-scissors-game-8106b",
+                storageBucket: "",
+                messagingSenderId: "302360129099"
+            };
+            firebase.initializeApp(config);
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

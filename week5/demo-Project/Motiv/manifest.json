@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Motiv",
+    "version": "0.1.0",
+    "description": "Motiv Yourself",
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "identity"
+    ],
+    "content_security_policy": "script-src 'self' https://*.firebase.com https://*.firebaseio.com; object-src 'self'",
+    "author": "Motiv",
+    "browser_action": {
+        "default_icon": "Motiv.png",
+        "default_popup": "index.html"
+    },
+    "oauth2": {
+        "client_id": "171943822330-lgnbbdv79ftei3s45ku9v5f9pgs4f39s.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/calendar"
+        ]
+    },
+    "background": {
+        "scripts": [
+            "jquery-3.2.1.min.js",
+            "background.js"
+        ]
+    }
+}

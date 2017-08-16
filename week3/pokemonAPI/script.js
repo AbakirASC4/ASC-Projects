@@ -71,7 +71,7 @@ function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     //change userName text, img source, & email text based on profile
     $(".userName").text(profile.getName());
-}
+}x
 
 //called when "sign out" button clicked
 function onSignOut() {
