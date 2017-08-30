@@ -1,4 +1,4 @@
-   body {
+    body {
   background-image: url(http://i.imgur.com/Nbi7bYI.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -6,6 +6,7 @@
     background-size: cover;
     position: absolute;
     }
+
             body {
                 background-color: white;
             }
@@ -47,6 +48,7 @@ font-size: 40px;
 .calender{
     position:relative
 }
+
 /*button#authorize-button{
     position: fixed;
     text-align: center;
@@ -59,8 +61,8 @@ div.container{
     border-width: 15px;
      border-style: solid;
     border-color:black;
-   width: 800px;
-   height: 600px;
+   width: 500px;
+   height: 1150px;
    margin: auto;
     position:relative;
      
@@ -72,7 +74,7 @@ hr.star-light{
     color:black;
 }
 .button1{
-background-color: #4CAF50; /* Green */
+background-color: white; /* Green */
     border: none;
     color: white;
     padding: 1px 32px;
@@ -80,12 +82,13 @@ background-color: #4CAF50; /* Green */
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 35%;
+    width: 45%;
     height: 100%;
     border-radius: 25px;
     font-family: 'Josefin Sans', sans-serif;
-    color: white;
+    color: black;
 }
+
 p.para1{
     font-size: 35px;
 font-family: 'Josefin Sans', sans-serif;
@@ -100,6 +103,7 @@ img.image1{
     width: 20%;
     height: auto;
 }
+
 p.image2{
     font-size: 20px;
     font-family: 'Merriweather', serif;
@@ -110,9 +114,59 @@ font-family: 'Josefin Sans', sans-serif;
     opacity: 0.5;
 }
 .button1:active {
-    position:relative;
-    top:1px;
+	position:relative;
+	top:1px;
 }
+
 /*#particle.js{
     position:relative;
 }*/
+
+
+#artist{
+    font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+width: 400px;
+    
+}
+#age{
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+width: 400px;
+}
+#subject{
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+width: 400px;
+}
+#activity{
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+width: 400px;
+}
+#hate{
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+width: 400px;
+}
+#gender{
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+width: 400px;
+}
+#love{
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+width: 400px;
+}
+#name{
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+width: 400px;
+}
+.h33{
+    font-size: 30px;
+font-family: 'Josefin Sans', sans-serif;
+    color: white; 
+    width: 400px;
+}

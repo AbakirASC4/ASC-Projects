@@ -1,5 +1,9 @@
+//load particle js
+particlesJS.load('particles-js', 'particles.json', function () {
+  console.log('particles.js config loaded');
+});
 // Client ID and API key from the Developer Console
-var rum = true;
+var run = true;
 var CLIENT_ID = '171943822330-bl7sccuonh491kq780ka1smj245ur72c.apps.googleusercontent.com';
 
 // Array of API discovery doc URLs for APIs used by the quickstart
@@ -48,14 +52,14 @@ function updateSigninStatus(isSignedIn) {
     authorizeButton.style.display = 'none';
     signoutButton.style.display = 'block';
     // listUpcomingEvents();
+    if (run == true) {
+      window.location.replace("https://abakirasc4.github.io/MOTIV1/Survey/index.html");
+      run == false;
+    }
 
   } else {
     authorizeButton.style.display = 'block';
     signoutButton.style.display = 'none';
-    if (rum == true) {
-      window.location.replace("../index.html");
-    }
-
   }
 }
 
@@ -99,6 +103,7 @@ function listUpcomingEvents() {
     'maxResults': 10,
     'orderBy': 'startTime'
   }).then(function (response) {
+    console.log(response.result.items);
     var events = response.result.items;
     appendPre('Upcoming events:');
 
@@ -116,38 +121,3 @@ function listUpcomingEvents() {
     }
   });
 }
-
-function change() {
-  $("form").empty();
-  $("body").append("<p id='content'></p>")
-  listUpcomingEvents();
-  $("body").append("<button onclick='notifyMe()'>Notify me!</button>");
-  
-}
-document.addEventListener('DOMContentLoaded', function () {
-    if (!Notification) {
-      alert('Desktop notifications not available in your browser. Try Chromium.');
-      return;
-    }
-
-    if (Notification.permission !== "granted")
-      Notification.requestPermission();
-  });
-
-  function notifyMe() {
-    if (Notification.permission !== "granted")
-      Notification.requestPermission();
-    else {
-      var notification = new Notification('Notification title', {
-        icon: '',
-        body: "Hey there! You've been notified!",
-      });
-
-      notification.onclick = function () {
-        window.open("");
-      };
-
-    }
-
-  }
-
