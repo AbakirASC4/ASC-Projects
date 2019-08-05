@@ -139,7 +139,7 @@ function disappear(){
         }
     }
     for (let j = 0; j < shots.length; j++){
-        if(check == true || shots[j].ypos < 0 ){
+        if(check == true || shots[j].ypos <= 0 ){
             shots.shift();
             check = false;
         }
